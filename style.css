@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+body {
+    height: 111vh;
+    width: 100vw;
+    background-color: #292F36;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+.heure {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    color: #f1f1f1;
+}
+.date {
+    position: absolute;
+    top: 0;
+    margin-top: 30px;
+    padding-bottom: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    color: #f1f1f1;
+    border-bottom: solid 1px #f1f1f1;
+}
+.temperature {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 30px;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #f1f1f1;
+}
+.logo-meteo {
+    position: absolute;
+    top: -10px;
+    right: 90px;
+    width: 60px;
+    margin: 30px;
+}
+/*Bloc News*/
+.news-gauche {
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    width: 45%;
+    height: 65%;
+    margin: 30px;
+}
+.news-droite {
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    width: 45%;
+    height: 65%;
+    margin: 30px;
+}
+.titre-g, .titre-d {
+    width: 100%;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
+    min-height: 40px;
+    color: #f1f1f1;
+}
+.illustration-g, .illustration-d {
+    max-width: 90%;
+    margin: 10px;
+    /* padding: 5px; */
+    max-height: 75%;
+    border-radius: 20px;
+    border: solid #f1f1f1 2px;
+}
+.description-g, .description-d {
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    color: #f1f1f1;
+}
+.source-g, .source-d {
+    width: 100%;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: right;
+    color: #f1f1f1;
+    text-decoration: underline;
+}
+
+/*Bloc prévisions météo heures*/
+.heure-bloc-prevision{
+    position: absolute;
+    bottom: 8%;
+    width: 100%;
+    display: grid;
+    grid-template: 150px / repeat(7, 1fr);
+    border-top: solid 1px #f1f1f1;
+    background-image: linear-gradient(#242930, #181a1d);
+}
+
+.bloc-h {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border-top: 1px solid #f1f1f1; */
+    font-size: 21px;
+    align-items: center;
+}
+/* .bloc-h:not(:last-child) {
+    border-right: 1px solid #f1f1f1;
+} */
+
+.heure-nom-prevision, .heure-prevision-valeur {
+    margin: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #f1f1f1;
+}
+.heure-prevision-valeur {
+    font-size: 16px;
+}
+.img-h {
+    width: 70px;
+}
+/*footer*/
+footer
+{
+	background-color: black;
+	position: absolute;
+    margin: 0;
+    left: 0;
+    bottom: 0;
+	padding-bottom: 20px;
+	text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+    width: 100%;
+    height: 10%;
+}
+p.credits
+{
+	color: gray;
+	text-align: center;
+	margin-bottom: -5px;
+}
+p.credits a {
+    color: gray;
+}
+p.credits a:hover {
+    color: white;
+}
